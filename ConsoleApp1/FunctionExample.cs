@@ -84,6 +84,33 @@ namespace ConsoleApp1
             double res =Math.Round(num1);
             Console.WriteLine(res);
             */
+
+            //DateAndTimeFunction
+
+            // DateTime dt1 = DateTime.Now; //10/25/2024 8:41:29 PM   
+
+            //DateTime today = DateTime.Today; //10/25/2024 12:00:00 AM
+
+            DateTime dt1 = DateTime.Now;
+            DateTime futureDate = dt1.AddYears(3);//10/28/2024 8:46:00 PM
+
+            //want to know date difference
+            int datediff = (futureDate - dt1).Days;//3
+            Console.WriteLine(datediff);                               //DateTime futureDate=dt1.AddHours(1);
+
+            // Console.WriteLine(dt1.ToShortDateString());// 10 / 25 / 2024
+            // Console.WriteLine(dt1.ToLongDateString());//Friday, October 25, 2024
+
+            //string datestring = "2024-10-25";
+            //  DateTime date = Convert.ToDateTime(datestring); 10 / 25 / 2024 12:00:00 AM
+            // DateTime date1 = DateTime.Parse(datestring); 10 / 25 / 2024 12:00:00 AM
+
+            //Console.WriteLine(dt1.ToString("yyyy-MM-dd"));//2024-10-25
+            //Console.WriteLine(dt1.ToString("dd-MMM-yyyy"));//2024-10-25
+            //Console.WriteLine(dt1.ToString("dd/MM/yyyy"));// 25 / 10 / 2024
+            //Console.WriteLine(dt1.ToString("hh:mm:ss"));//09:04:52  small h-12 ,H-24
+
+
             Console.ReadLine();
       }
   }
