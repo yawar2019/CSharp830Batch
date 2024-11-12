@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp1.FileHandlingExample</StartupObject>
+    <StartupObject>ConsoleApp1.AnonymusMethod</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="StudentClassLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AccessClassLibrary.cs" />
     <Compile Include="AccessModifier.cs" />
+    <Compile Include="AnonymusMethod.cs" />
     <Compile Include="ConstructorExample.cs" />
     <Compile Include="EnumExample.cs" />
     <Compile Include="FileHandlingExample.cs" />

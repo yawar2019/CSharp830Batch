@@ -17,6 +17,9 @@ namespace WindowsFormsApp1
         static
 
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-3BOESUM\\SQLEXPRESS;Initial Catalog=test;Integrated Security=true");
+        //SqlConnection conn = new SqlConnection("Data Source=DESKTOP-3BOESUM\\SQLEXPRESS;Initial Catalog=test;User Id=1211;Password=vvvv");
+
+
         public Form2()
         {
             InitializeComponent();
@@ -41,10 +44,11 @@ namespace WindowsFormsApp1
 
         private async void Form2_Load(object sender, EventArgs e)
         {
+            ServiceReferenceEmployeeResponse.WebService1SoapClient emp = new  ServiceReferenceEmployeeResponse.WebService1SoapClient();
 
-            DataTable dt = await getEmployeeData();
+           
 
-            dataGridView1.DataSource = dt;
+            dataGridView1.DataSource = emp.EmployeeData();
 
 
 
